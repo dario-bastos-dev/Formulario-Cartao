@@ -1,8 +1,12 @@
+/*Configurações padrão do Body*/
 body{
+    max-width: 1440px;
     font-family: "Space Grotesk"!important;
     font-weight: 500;
+    background-color: blue;
 }
 
+/*Modificações Bootstrap*/
 div.data {
     display: flex;
 }
@@ -13,4 +17,19 @@ div.imput {
 
 label {
     font-size: 14px !important;
+}
+
+/*Style Bckground*/
+#img-bg{
+    z-index: -1;
+    height:500px ;
+}
+
+main {
+    margin-left: 40%;
+}
+
+/*Formulário*/
+#formulario {
+    margin: auto;
 }
