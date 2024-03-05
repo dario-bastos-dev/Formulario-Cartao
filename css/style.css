@@ -1,9 +1,14 @@
-/*Configurações padrão do Body*/
+/*Configurações padrão*/
 body{
-    max-width: 1440px;
+    max-width: 1240px;
     font-family: "Space Grotesk"!important;
     font-weight: 500;
-    background-color: blue;
+    background-image: url(../src/img/bg-main-desktop.png);
+    background-repeat: no-repeat;
+}
+
+main {
+    display: flex;
 }
 
 /*Modificações Bootstrap*/
@@ -12,24 +17,41 @@ div.data {
 }
 
 div.imput {
-    margin-left: -10%;
+    margin-left: -9%;
 }
 
 label {
     font-size: 14px !important;
 }
 
-/*Style Bckground*/
-#img-bg{
-    z-index: -1;
-    height:500px ;
-}
-
-main {
-    margin-left: 40%;
+div>#btn {
+    width: 78%;
+    background-color: hsl(278, 68%, 11%);
 }
 
 /*Formulário*/
 #formulario {
-    margin: auto;
+    margin: 20% 0 0 200px;
+}
+
+/*Imagem dos cartões*/
+#cartao {
+    margin: 10% 0 0 15%;
+}
+
+#cartao #cartao-frente img, #cartao #cartao-tras img {
+    width: 400px;
+
+}
+
+/*Frente*/
+#cartao-frente {
+    margin: 0 0 20px 0;
+}
+
+
+/*Verso*/
+#cartao-tras {
+    margin: 0 0 0 25%;
+    padding: 20px 0 0 0;
 }
