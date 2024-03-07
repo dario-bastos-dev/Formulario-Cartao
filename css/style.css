@@ -5,10 +5,19 @@ body{
     font-weight: 500;
     background-image: url(../src/img/bg-main-desktop.png);
     background-repeat: no-repeat;
+    font-size: 18px;
 }
 
 main {
     display: flex;
+}
+
+/*Variables*/
+:root {
+    --font-color:hsl(0, 0%, 100%);
+    --placeholder-color:hsl(270, 3%, 87%);
+    --cinza:hsl(279, 6%, 55%);
+    --violeta:hsl(278, 68%, 11%);
 }
 
 /*Modificações Bootstrap*/
@@ -26,7 +35,8 @@ label {
 
 div>#btn {
     width: 78%;
-    background-color: hsl(278, 68%, 11%);
+    background-color: var(--violeta);
+    margin-top: 20px;
 }
 
 /*Formulário*/
@@ -34,9 +44,14 @@ div>#btn {
     margin: 20% 0 0 200px;
 }
 
+#formulario input::placeholder{
+    color: var(--placeholder-color);
+    font-weight: 600;
+}
+
 /*Imagem dos cartões*/
 #cartao {
-    margin: 10% 0 0 15%;
+    margin: 13% 0 0 15%;
 }
 
 #cartao #cartao-frente img, #cartao #cartao-tras img {
@@ -46,12 +61,38 @@ div>#btn {
 
 /*Frente*/
 #cartao-frente {
-    margin: 0 0 20px 0;
+    color: var(--font-color);
+}
+
+#cartao-frente img {
+    box-shadow: 35px 0px 50px -25px var(--cinza);
+}
+
+#proprietario-data, #numero-cartao{
+    position: relative;
+    bottom: 110px;
+    left: 35px;
+}
+
+#numero-cartao {
+    
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#proprietario-data {
+    font-size: 14px;
+    color: var(--placeholder-color);
+}
+
+#proprietario-data #nome-proprietario{
+    letter-spacing: 1.5px;
+    margin: 0 150px 0 0;
 }
 
 
 /*Verso*/
 #cartao-tras {
-    margin: 0 0 0 25%;
-    padding: 20px 0 0 0;
+    margin: -70px 0 0 25%;
+    padding: 0px 0 0 0;
 }
