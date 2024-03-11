@@ -18,6 +18,8 @@ main {
     --placeholder-color:hsl(270, 3%, 87%);
     --cinza:hsl(279, 6%, 55%);
     --violeta:hsl(278, 68%, 11%);
+    --borda:hsl(249, 99%, 64%) to hsl(278, 94%, 30%)  ;
+    --erro:hsl(0, 100%, 66%) ;
 }
 
 /*Modificações Bootstrap*/
@@ -37,6 +39,7 @@ div>#btn {
     width: 78%;
     background-color: var(--violeta);
     margin-top: 20px;
+    border: none;
 }
 
 /*Formulário*/
@@ -95,4 +98,16 @@ div>#btn {
 #cartao-tras {
     margin: -70px 0 0 25%;
     padding: 0px 0 0 0;
+    color: var(--font-color);
+}
+
+#cartao-tras div {
+    display: flex;
+    justify-content: end;
+}
+
+#cartao-tras div #codigo-cartao {
+    position: relative;
+    bottom: 123px;
+    left: 50px;
 }

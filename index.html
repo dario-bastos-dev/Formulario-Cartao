@@ -50,7 +50,7 @@
             <div id="cartao-tras">
                 <img src="./src/img/bg-card-back.png" alt="">
                 <div>
-                    <p id="codigo-cartao"></p>
+                    <p id="codigo-cartao">000</p>
                 </div>
             </div>
         </section>
@@ -62,7 +62,7 @@
                 <div class="row">
                     <div class="col-md-10">
                         <label for="inputName" class="form-label">CARDHOLDER NAME</label>
-                        <input type="text" class="form-control" id="inputName" placeholder="ex: Jane Appleseed">
+                        <input type="text" class="form-control" id="inputName" placeholder="ex: Jane Appleseed" maxlength="23">
                     </div>
                 </div>
 
@@ -70,7 +70,7 @@
                     <div class="col-md-10">
                         <label for="inputCardNumber" class="form-label">CARD NUMBER</label>
                         <input type="text" class="form-control" id="inputCardNumber"
-                            placeholder="ex: 1234 5678 9101 0000">
+                            placeholder="ex: 1234 5678 9101 0000" maxlength="12">
                     </div>
                 </div>
 
@@ -80,14 +80,14 @@
                         <div class="col-6">
                             <label for="inputNumber" class="form-label" id="texto">EXP. DATE (MM/YY)</label>
                             <div class="col-7 data">
-                                <input type="text" class="form-control me-2" id="inputNumber" placeholder="MM">
-                                <input type="text" class="form-control" id="inputNumber" placeholder="YY">
+                                <input type="text" class="form-control me-2" id="inputNumber" placeholder="MM" maxlength="2">
+                                <input type="text" class="form-control" id="inputNumber" placeholder="YY" maxlength="2">
                             </div>
                         </div>
 
                         <div class="col-md-5 imput">
                             <label for="inputCardNumber" class="form-label">CVC</label>
-                            <input type="text" class="form-control" id="inputCardNumber" placeholder="ex: 123">
+                            <input type="text" class="form-control" id="inputCardNumber" placeholder="ex: 123" maxlength="3">
                         </div>
 
 
