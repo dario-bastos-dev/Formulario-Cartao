@@ -39,10 +39,10 @@
                         <span class="numero" id="area-3">0000</span>
                         <span class="numero" id="area-4">0000</span>
                     </p>
-                    <p id="proprietario-data">
-                        <span  id="nome-proprietario">JANE APPLESEED</span>
-                        <span id="data-cartao">00/00</span>
-                    </p>
+                    <div id="proprietario-data">
+                        <p  id="nome-proprietario">JANE APPLESEED</p>
+                        <p id="data-cartao">00/00</p>
+                    </div>
                 </div>
             </div>
 
@@ -62,7 +62,7 @@
                 <div class="row">
                     <div class="col-md-10">
                         <label for="inputName" class="form-label">CARDHOLDER NAME</label>
-                        <input type="text" class="form-control" id="inputName" placeholder="ex: Jane Appleseed" maxlength="23">
+                        <input type="text" class="form-control" id="inputName" placeholder="ex: Jane Appleseed" maxlength="23" onkeyup="atualizarNome()">
                     </div>
                 </div>
 

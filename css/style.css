@@ -44,7 +44,7 @@ div>#btn {
 
 /*Formulário*/
 #formulario {
-    margin: 20% 0 0 200px;
+    margin: 15% 0 0 200px;
 }
 
 #formulario input::placeholder{
@@ -54,21 +54,20 @@ div>#btn {
 
 /*Imagem dos cartões*/
 #cartao {
-    margin: 13% 0 0 15%;
+    margin: 10% 0 0 15%;
 }
 
 #cartao #cartao-frente img, #cartao #cartao-tras img {
     width: 400px;
+}
 
+#cartao-frente img, #cartao-tras img {
+    box-shadow: 35px 0px 50px -25px var(--cinza);
 }
 
 /*Frente*/
 #cartao-frente {
     color: var(--font-color);
-}
-
-#cartao-frente img {
-    box-shadow: 35px 0px 50px -25px var(--cinza);
 }
 
 #proprietario-data, #numero-cartao{
@@ -84,8 +83,15 @@ div>#btn {
 }
 
 #proprietario-data {
+    width: 340px;
     font-size: 14px;
     color: var(--placeholder-color);
+    display: flex;
+}
+
+#proprietario-data #nome-proprietario{
+    max-width: 135px;
+    min-width: 140px;
 }
 
 #proprietario-data #nome-proprietario{
