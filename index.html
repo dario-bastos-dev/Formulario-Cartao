@@ -62,14 +62,14 @@
                 <div class="row">
                     <div class="col-md-10">
                         <label for="inputName" class="form-label">CARDHOLDER NAME</label>
-                        <input type="text" class="form-control" id="inputName" placeholder="ex: Jane Appleseed" maxlength="23" onkeyup="atualizarNome()">
+                        <input type="text" class="form-control" id="inputName" placeholder="ex: Jane Appleseed" maxlength="23" oninput="this.value = this.value.replace(/[^a-zA-Z]/g, '')" >
                     </div>
                 </div>
 
                 <div class="row mt-3">
                     <div class="col-md-10">
                         <label for="inputCardNumber" class="form-label">CARD NUMBER</label>
-                        <input type="text" class="form-control" id="inputCardNumber"
+                        <input type="number" class="form-control" id="inputCardNumber"
                             placeholder="ex: 1234 5678 9101 0000" maxlength="12">
                     </div>
                 </div>
