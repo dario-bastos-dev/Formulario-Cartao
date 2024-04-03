@@ -21,6 +21,8 @@ inputNumb.addEventListener("keyup", atualizarNumb, );
 //Aplicando mascara JQuery
 $(document).ready(function() {
   $("#inputCardNumber").mask("0000 0000 0000 0000")
+
+  $("input.cvc").mask("000")
 })
 
 //---------------------
