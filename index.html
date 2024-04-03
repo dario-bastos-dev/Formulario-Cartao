@@ -20,24 +20,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <!-- JQuery -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery.mask.js"></script>
 
 </head>
 
 <body>
 
-
+    <!--Fundo-->
+    <img class="img-fundo" src="./src/img/bg-main-desktop.png" alt="">
+    <!--Formulário e Cartão-->
     <main>
         <!--Área do cartão-->
         <section id="cartao">
             <!--Cartão frente-->
             <div>
                 <div id="cartao-frente">
-                    <img src="./src/img/bg-card-front.png" alt="">
+                    <img src="./src/img/Group 2.png" alt="">
                     <p id="numero-cartao">
-                        <span class="numero" id="area-1">0000</span>
-                        <span class="numero" id="area-2">0000</span>
-                        <span class="numero" id="area-3">0000</span>
-                        <span class="numero" id="area-4">0000</span>
+                        <span class="numero" id="area">
+                            0000 0000 0000 0000
+                        </span>
+                        
                     </p>
                     <div id="proprietario-data">
                         <p  id="nome-proprietario">JANE APPLESEED</p>
@@ -60,34 +65,34 @@
             <form class="row g-3">
 
                 <div class="row">
-                    <div class="col-md-10">
+                    <div class="col-md-12">
                         <label for="inputName" class="form-label">CARDHOLDER NAME</label>
                         <input type="text" class="form-control" id="inputName" placeholder="ex: Jane Appleseed" maxlength="23" oninput="this.value = this.value.replace(/[^a-zA-Z]/g, '')" >
                     </div>
                 </div>
 
                 <div class="row mt-3">
-                    <div class="col-md-10">
+                    <div class="col-md-12">
                         <label for="inputCardNumber" class="form-label">CARD NUMBER</label>
-                        <input type="number" class="form-control" id="inputCardNumber"
-                            placeholder="ex: 1234 5678 9101 0000" maxlength="12">
+                        <input type="text" class="form-control" id="inputCardNumber"
+                            placeholder="ex: 1234 5678 9101 1121" maxlength="16" >
                     </div>
                 </div>
 
                 <div class="row mt-3">
                     <div class="col-12 data">
 
-                        <div class="col-6">
+                        <div class="col-7">
                             <label for="inputNumber" class="form-label" id="texto">EXP. DATE (MM/YY)</label>
-                            <div class="col-7 data">
-                                <input type="text" class="form-control me-2" id="inputNumber" placeholder="MM" maxlength="2">
-                                <input type="text" class="form-control" id="inputNumber" placeholder="YY" maxlength="2">
+                            <div class="col-8 data">
+                                <input type="text" class="form-control me-2 data-mes" id="inputNumber" placeholder="MM" maxlength="2">
+                                <input type="text" class="form-control data-ano" id="inputNumber" placeholder="YY" maxlength="2">
                             </div>
                         </div>
 
                         <div class="col-md-5 imput">
                             <label for="inputCardNumber" class="form-label">CVC</label>
-                            <input type="text" class="form-control" id="inputCardNumber" placeholder="ex: 123" maxlength="3">
+                            <input type="text" class="form-control cvc" id="inputCardNumber" placeholder="ex: 123" maxlength="3">
                         </div>
 
 
