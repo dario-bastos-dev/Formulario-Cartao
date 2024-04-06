@@ -1,19 +1,187 @@
 /*Smal*/
-@media(max-width: 767.8px) {
+@media (max-width: 500px) {
+  main {
+    padding: 0;
+    display: block;
+  }
+  /*Fundo*/
+  img.img-fundo {
+    display: none;
+  }
 
+  img.img-fundo-respo {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+  }
+
+  /*Formulário*/
+  #formulario {
+    margin: -40% auto 0;
+    left: 0;
+    width: 360px;
+  }
+
+  div.input {
+    margin: 0 0 0 50px;
+  }
+
+  #formulario div input.input-1 {
+    width: 340px;
+  }
+
+  #formulario div input.input-2 {
+    width: 60px;
+  }
+  #formulario div input.input-3 {
+    width: 160px;
+  }
+
+  div > #btn {
+    width: 340px;
+  }
+
+  label {
+    font-size: 18px !important;
+    margin: 0 -100px 0 0;
+  }
+
+  /*Cartões*/
+  #cartao {
+    scale: 0.7;
+    margin: 0;
+    position: relative;
+    bottom: 200px;
+    right: 9%;
+  }
+  /*--Frente*/
+  #cartao-frente {
+    position: relative;
+    top: 370px;
+  }
+}
+
+/*Medium*/
+@media (min-width: 501px) and (max-width: 767.7px) {
+  main {
+    padding: 0;
+    display: block;
+    width: 670px;
+  }
+  /*Fundo*/
+  img.img-fundo {
+    display: none;
+  }
+
+  img.img-fundo-respo {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 28%;
+  }
+
+  /*Formulário*/
+  #formulario {
+    margin: -15% auto 0;
+    left: 0;
+    width: 360px;
+  }
+
+  div.input {
+    margin: 0 0 0 50px;
+  }
+
+  #formulario div input.input-1 {
+    width: 340px;
+  }
+
+  #formulario div input.input-2 {
+    width: 60px;
+  }
+  #formulario div input.input-3 {
+    width: 160px;
+  }
+
+  div > #btn {
+    width: 340px;
+  }
+
+  label {
+    margin: 0 -100px 0 0;
+  }
+
+  /*Cartões*/
+  #cartao {
+    scale: 0.8;
+    margin: 0;
+    position: relative;
+    bottom: 200px;
+    right: -8%;
+  }
+
+  /*--Frente*/
+  #cartao-frente {
+    position: relative;
+    top: 370px;
+  }
+
+  /*Verso*/
+  #cartao-tras div #codigo-cartao {
+    left: -35%;
+  }
 }
 
 /*Medium*/
 @media (min-width: 768px) and (max-width: 991.8px) {
-
 }
 
 /*Large*/
 @media (min-width: 992px) and (max-width: 1199.8px) {
+    main {
+        width: 1000px;
+      }
 
+  #cartao {
+    scale: 0.9;
+    margin: 10% 0 0 -10%;
+  }
+
+  /*Fundo*/
+  img.img-fundo {
+    width: 30%;
+  }
+
+  /*Formulário*/
+#formulario {
+    width: 40%;
+}
+
+#formulario div input.input-1 {
+    width: 340px;
+  }
+
+  #formulario div input.input-2 {
+    width: 60px;
+  }
+  #formulario div input.input-3 {
+    width: 160px;
+  }
+
+  div > #btn {
+    width: 345px;
+  }
+
+  div.input {
+    margin: 0 0 0 55px;
+  }
+
+  label {
+    margin: 0 -100px 0 0;
+  }
 }
 
 /*Extra large*/
 @media (min-width: 1200px) {
-
 }
