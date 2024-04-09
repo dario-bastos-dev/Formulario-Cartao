@@ -186,11 +186,14 @@ btn.addEventListener("click", function() {
   let data = verificarData()
   let cvc = verificarCVC()
 
-  if(nome == true && numero == true && data == true && cvc == true) {
-    window.location.href = "../html/obrigado.html"
-  } 
+  let btn = document.querySelector("button a.enviar")
   
 
-  console.log(nome, numero, data, cvc)
+  if(nome == false || numero == false || data == false || cvc == false) {
+    btn.removeAttribute("href")
+  } else {
+    btn.setAttribute("href", "./html/obrigado.html")
+
+  }
 })
 
