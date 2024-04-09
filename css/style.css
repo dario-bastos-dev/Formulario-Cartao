@@ -2,8 +2,7 @@
 body{
     max-width: 1240px;
     font-family: "Space Grotesk"!important;
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 500;  
 }
 
 main {
@@ -30,11 +29,13 @@ label {
     font-size: 18px !important;
 }
 
-div>#btn {
-    width: 95%;
+#btn {
+    width: 400px;
+    height: 50px;
     background-color: var(--violeta);
     margin-top: 20px;
     border: none;
+    font-size: 18px;
 }
 
 /*Fundo*/
@@ -66,12 +67,23 @@ main {
 }
 
 div.input {
-    margin: 0 0 0 5%;
+    margin: 0 0 0 ;
 }
 
 #formulario div input.input-1, #formulario div input.input-2, #formulario div input.input-3{
     height: 50px;
     font-size: 20px;
+}
+
+#formulario div input.input-1 {
+    width: 400px;
+}
+
+#formulario div input.input-2 {
+    width: 80px;
+}
+#formulario div input.input-3 {
+    width: 200px;
 }
 
 /*Imagem dos cartões*/
@@ -95,11 +107,10 @@ div.input {
 #proprietario-data, #numero-cartao{
     position: relative;
     bottom: 110px;
-    left: 35px;
+    left: 30px;
 }
 
 #numero-cartao {
-    
     font-size: 30px;
     font-weight: 400;
 }
@@ -112,15 +123,9 @@ div.input {
 }
 
 #proprietario-data #nome-proprietario{
-    max-width: 135px;
-    min-width: 140px;
-}
-
-#proprietario-data #nome-proprietario{
     letter-spacing: 1.5px;
-    margin: 0 150px 0 0;
+    width: 290px;
 }
-
 
 /*Verso*/
 #cartao-tras {
@@ -138,4 +143,46 @@ div.input {
     position: relative;
     bottom: 123px;
     left: 10%;
+}
+
+/*Mensagem de erro*/
+.hide {
+    display: none;
+}
+
+.input-border {
+    border-color: red;
+}
+
+h6 {
+    color: red;
+    padding: 10px 0 0 0;
+}
+
+/*--------------------------------------------*/
+
+/*Página de sucesso*/
+section#msg-sucesso {
+    position: relative;
+    left: 200px;
+    top: 175px;
+    width: 400px;
+    text-align: center;
+}
+
+a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.btn-2 {
+    width: 400px !important;
+}
+
+h3 {
+    letter-spacing: 3px;
+}
+
+h5 {
+    color: var(--cinza);
 }

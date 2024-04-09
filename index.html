@@ -68,16 +68,18 @@
                 <div class="row">
                     <div class="col-md-8">
                         <label for="inputName" class="form-label">CARDHOLDER NAME</label>
-                        <input type="text" class="form-control input-1" id="inputName" placeholder="ex: Jane Appleseed" maxlength="23" oninput="this.value = this.value.replace(/[^a-zA-Z]/g, '')" >
+                        <input type="text" class="form-control input-1" id="inputName" placeholder="ex: Jane Appleseed" maxlength="16" >
                     </div>
+                    <h6 class="hide area-1">Name invalid</h6>
                 </div>
 
                 <div class="row mt-3">
-                    <div class="col-md-8">
+                    <div class="col-md-8 area-2">
                         <label for="inputCardNumber" class="form-label">CARD NUMBER</label>
-                        <input type="text" class="form-control input-1" id="inputCardNumber"
+                        <input type="text" class="form-control input-1 input-4" id="inputCardNumber"
                             placeholder="ex: 1234 5678 9101 1121" maxlength="16" >
                     </div>
+                    <h6 class="hide area-2">Number invalid</h6>
                 </div>
 
                 <div class="row mt-3">
@@ -85,16 +87,21 @@
 
                         <div class="col-5">
                             <label for="inputNumber" class="form-label" id="texto">EXP. DATE (MM/YY)</label>
-                            <div class="col-8 data">
+                            <div class="col-8 data area-3">
                                 <input type="text" class="form-control me-2 data-mes input-2" id="inputNumber" placeholder="MM" maxlength="2">
-                                <input type="text" class="form-control data-ano input-2" id="inputNumber" placeholder="YY" maxlength="2">
+
+                                <input type="text" class="form-control data-ano input-2 input5" id="inputNumber" placeholder="YY" maxlength="2">
                             </div>
+                            <h6 class="hide area-3">Data invalid</h6>
                         </div>
 
-                        <div class="col-sm-3 input">
+                        <div class="col-sm-3 input area-4">
                             <label for="inputCardNumber" class="form-label">CVC</label>
                             <input type="text" class="form-control cvc input-3" id="inputCardNumber" placeholder="ex: 123" maxlength="3">
+
+                            <h6 class="hide area-4">CVC invalid</h6>
                         </div>
+                        
 
 
 
@@ -103,7 +110,7 @@
 
                 </div>
                 <div class="mt-3 d-grid col-8">
-                    <button type="submit" class="btn btn-primary" id="btn">Confirm</button>
+                    <button type="botton" class="btn btn-primary" id="btn">Confirm</button>
                 </div>
             </form>
         </section>
