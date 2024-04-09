@@ -38,7 +38,7 @@
     width: 160px;
   }
 
-  div > #btn {
+  div #btn {
     width: 340px;
   }
 
@@ -60,6 +60,19 @@
     position: relative;
     top: 370px;
   }
+
+  /*Página de obrigado*/
+  section#msg-sucesso {
+    left: 0;
+    top: 0;
+    margin: auto;
+    top: -100px;
+    width: 340;
+  }
+
+  .btn-2 {
+    width: 340px !important;
+}
 }
 
 /*Medium*/
@@ -131,6 +144,19 @@
   #cartao-tras div #codigo-cartao {
     left: -35%;
   }
+
+  /*Página de obrigado*/
+  section#msg-sucesso {
+    left: 0;
+    top: 0;
+    margin: auto;
+    top: -100px;
+    width: 340;
+  }
+
+  .btn-2 {
+    width: 340px !important;
+}
 }
 
 /*Medium*/
@@ -180,6 +206,18 @@
   label {
     margin: 0 -100px 0 0;
   }
+
+  /*Página de obrigado*/
+  section#msg-sucesso {
+    left: 50px;
+    top: 0;
+    margin: auto;
+    width: 340;
+  }
+
+  .btn-2 {
+    width: 340px !important;
+}
 }
 
 /*Extra large*/
